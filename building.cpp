@@ -1,5 +1,7 @@
 #include "applib/maze.h" 
 
+#include <iostream>
+
 int main()
 {
     Maze myMaze;
@@ -11,7 +13,7 @@ int main()
     if (!myMaze.load(mazeFile))
     {
         cerr << "Failed to load " << mazeFile << endl;
-        return;
+        return -1;
     }
     cout << "*** Solving " << mazeFile << endl;
     if (myMaze.solve())
