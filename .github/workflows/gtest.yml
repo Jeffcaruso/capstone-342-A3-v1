@@ -65,7 +65,8 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt-get update valgrind
+      run: sudo apt update
+      run: sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
       run:  bazel test --cxxopt=-std=c++14 --verbose_failures --run_under='/usr/bin/valgrind --leak-check=full --errors-for-leak-kinds=definite --error-exitcode=3' --test_output=all //Tests:APP_test
@@ -84,7 +85,8 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt-get update valgrind
+      run: sudo apt update
+      run: sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
       run:  bazel test --cxxopt=-std=c++14 --verbose_failures --run_under='/usr/bin/valgrind --leak-check=full --errors-for-leak-kinds=definite --error-exitcode=3' --test_output=all //Tests:APP_test_2
@@ -103,7 +105,8 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt-get update valgrind
+      run: sudo apt update
+      run: sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
       run:  bazel test --cxxopt=-std=c++14 --verbose_failures --run_under='/usr/bin/valgrind --leak-check=full --errors-for-leak-kinds=definite --error-exitcode=3' --test_output=all //Tests:APP_test_3
@@ -122,7 +125,8 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt-get update valgrind
+      run: sudo apt update
+      run: sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
       run:  bazel test --cxxopt=-std=c++14 --verbose_failures --run_under='/usr/bin/valgrind --leak-check=full --errors-for-leak-kinds=definite --error-exitcode=3' --test_output=all //Tests:APP_test_4
@@ -141,7 +145,8 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt-get update valgrind
+      run: sudo apt update
+      run: sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
       run:  bazel test --cxxopt=-std=c++14 --verbose_failures --run_under='/usr/bin/valgrind --leak-check=full --errors-for-leak-kinds=definite --error-exitcode=3' --test_output=all //Tests:APP_test_5
@@ -160,7 +165,8 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt-get update valgrind
+      run: sudo apt update
+      run: sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
       run:  bazel test --cxxopt=-std=c++14 --verbose_failures --run_under='/usr/bin/valgrind --leak-check=full --errors-for-leak-kinds=definite --error-exitcode=3' --test_output=all //Tests:APP_test_6
