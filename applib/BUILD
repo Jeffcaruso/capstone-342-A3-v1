@@ -9,6 +9,10 @@ cc_library(
   data = ["//data:maze0.txt", "//data:maze1.txt", "//data:maze2.txt", "//data:maze3.txt"],
 )
 
+#data = ["data/maze0.txt", "data/maze1.txt", "data/maze2.txt", "data/maze3.txt"],
+#or
+#  data = ["//data:maze0.txt", "//data:maze1.txt", "//data:maze2.txt", "//data:maze3.txt"],
+
 # Description
 # including building.cpp will break this becuase google test wants to be have the main method.
 # your main method will not meet their expectations, and testing will not work properly.
