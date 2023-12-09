@@ -9,7 +9,7 @@ int main()
     //don't need to loop through tests. That coverage is being done by gTest.
     //can loop through one tho...
 
-    string mazeFile = "maze0.txt";
+    string mazeFile = "data/maze0.txt";
     if (!myMaze.load(mazeFile))
     {
         cerr << "Failed to load " << mazeFile << endl;
