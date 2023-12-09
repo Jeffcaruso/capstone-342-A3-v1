@@ -4,7 +4,7 @@ cc_library(
   name = "APPLib",
   visibility = ["//visibility:public"],
   hdrs = glob(["**/*.h"]),
-  srcs = glob(["maze.cpp"]),  # can add other files if needed. But don't want building.cpp! *See description*
+  srcs = glob(["*.cpp"]),  # can add other files if needed. But don't want building.cpp! *See description*
   deps = ["@bazel_tools//tools/cpp/runfiles"],
   data = ["//data:maze0.txt", "//data:maze1.txt", "//data:maze2.txt", "//data:maze3.txt"],
 )
