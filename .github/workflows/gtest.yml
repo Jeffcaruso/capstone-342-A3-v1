@@ -65,7 +65,7 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt update
+      run:  sudo apt update;
             sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
@@ -85,7 +85,7 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt update
+      run:  sudo apt update;
             sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
@@ -105,7 +105,7 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt update
+      run:  sudo apt update;
             sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
@@ -125,7 +125,7 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt update
+      run:  sudo apt update;
             sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
@@ -145,7 +145,7 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt update
+      run:  sudo apt update;
             sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
@@ -165,7 +165,7 @@ jobs:
     - name: Install Bazel
       run: sudo npm install -g @bazel/bazelisk
     - name: Install Valgrind
-      run:  sudo apt update
+      run:  sudo apt update;
             sudo apt install -y valgrind
     - uses: actions/checkout@v1
     - name: Run Test
