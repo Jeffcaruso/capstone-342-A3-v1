@@ -16,7 +16,22 @@ using namespace std;
 TEST(Test1, updateName)
 {
 	Maze myMaze;
-
+    string mazeFile = "maze0.txt";
+    if (!myMaze.load(mazeFile))
+    {
+        cerr << "Failed to load " << mazeFile << endl;
+        return -1;
+    }
+    cout << "*** Solving " << mazeFile << endl;
+    if (myMaze.solve())
+    {
+        cout << "Path: " << myMaze.getPath() << endl;
+    }
+    else
+    {
+        cout << "Failed to solve: " << mazeFile << endl;
+    }
+    cout << myMaze << endl;
 }
 
 //going to need to automate and explain something like this in gTest (for maze0)
