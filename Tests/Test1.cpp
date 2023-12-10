@@ -44,5 +44,8 @@ TEST(Test1, updateName)
         cout << "Failed to solve: " << mazeFile << endl;
     }
     cout << myMaze << endl;
+    string expectedPath;
+    expectedPath = "";
+    EXPECT_EQ(myMaze.getPath(),)
 
 }
