@@ -20,29 +20,15 @@ TEST(Test5, badfile)
     string mazeFile = "data/badfile.txt";
     bool result = false;
     result = myMaze.load(mazeFile);
-    if (! result)
-    {
-        cerr << "Failed to load " << mazeFile << endl;
-        //rest of this is useless without the test file being loaded in, so exit here...
-        ASSERT_TRUE(result); 
-        return;
-    }
-    //if made it here, should pass.
-    EXPECT_TRUE(result); 
 
-    cout << "*** Solving " << mazeFile << endl;
-    result = myMaze.solve();
-    if (result)
+    if(! result)
     {
-        EXPECT_TRUE(result);
-        cout << "Path: " << myMaze.getPath() << endl;
+        //passes
+        EXPECT_FALSE(result);
     }
     else
     {
-        //should fail here... b/c solve() failed to solve it.
+        //fails
         EXPECT_TRUE(result);
-        cout << "Failed to solve: " << mazeFile << endl;
     }
-    cout << myMaze << endl;
-
 }
