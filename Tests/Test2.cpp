@@ -18,7 +18,7 @@ using namespace std;
 // for c strings, use EXPECT_STREQ (or STRNE)
 // http://google.github.io/googletest/reference/assertions.html
 
-TEST(Test2, updateName)
+TEST(Test2, maze1)
 {
 	Maze myMaze;
     //string mazeFile = "maze0.txt";

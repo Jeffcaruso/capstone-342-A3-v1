@@ -13,7 +13,7 @@
 
 using namespace std;
 
-TEST(Test1, updateName)
+TEST(Test1, maze0)
 {
 	Maze myMaze;
     //string mazeFile = "maze0.txt";
