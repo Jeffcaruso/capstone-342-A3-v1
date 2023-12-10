@@ -45,7 +45,7 @@ TEST(Test1, updateName)
     }
     cout << myMaze << endl;
     string expectedPath;
-    expectedPath = "";
-    EXPECT_EQ(myMaze.getPath(),)
-
+    //solving order of: N E S W... (with backtracking)
+    expectedPath = "NNNNNESSSSENNNNESSSSENNNNESSSSENNNNN";
+    EXPECT_EQ(myMaze.getPath(), expectedPath);
 }
