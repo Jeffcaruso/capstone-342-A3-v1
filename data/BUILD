@@ -1,1 +1,1 @@
-exports_files(["maze0.txt","maze1.txt","maze2.txt","maze3.txt"])
+exports_files(["maze0.txt","maze1.txt","maze2.txt","maze3.txt","badfile.txt"])
