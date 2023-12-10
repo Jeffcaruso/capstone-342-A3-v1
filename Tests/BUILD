@@ -53,6 +53,7 @@ cc_test(
   size = "small",
   srcs = glob(["Test5.cpp"]),
   copts = ["-Iexternal/gtest/include"],
+  data =["//data:badfile.txt"],
   deps = [
     "@com_google_googletest//:gtest_main",
     "//applib:APPLib"
