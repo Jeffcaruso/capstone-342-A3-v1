@@ -49,6 +49,10 @@ TEST(Test2, updateName)
         cout << "Failed to solve: " << mazeFile << endl;
     }
     cout << myMaze << endl;
+    string expectedPath;
+    //solving order of: N E S W... (with backtracking)
+    expectedPath = "NNWWWWWNNNEEEEEESEESSSEEENNNNN";
+    EXPECT_EQ(myMaze.getPath(), expectedPath);
 
 }
 
