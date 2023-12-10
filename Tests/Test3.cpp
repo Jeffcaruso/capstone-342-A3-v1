@@ -39,7 +39,7 @@ TEST(Test3, updateName)
     }
     else
     {
-        //should fail here... b/c we failed to solve it.
+        //should fail here... b/c solve() failed to solve it.
         EXPECT_TRUE(result);
         cout << "Failed to solve: " << mazeFile << endl;
     }
@@ -47,25 +47,3 @@ TEST(Test3, updateName)
 
 }
 
-//going to need to automate and explain something like this in gTest (for maze2)
-    // Maze myMaze;
-
-    // //don't need to loop through tests. That coverage is being done by gTest.
-    // //can loop through one tho...
-
-    // string mazeFile = "maze0.txt";
-    // if (!myMaze.load(mazeFile))
-    // {
-    //     cerr << "Failed to load " << mazeFile << endl;
-    //     return -1;
-    // }
-    // cout << "*** Solving " << mazeFile << endl;
-    // if (myMaze.solve())
-    // {
-    //     cout << "Path: " << myMaze.getPath() << endl;
-    // }
-    // else
-    // {
-    //     cout << "Failed to solve: " << mazeFile << endl;
-    // }
-    // cout << myMaze << endl;

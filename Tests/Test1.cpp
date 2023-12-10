@@ -39,9 +39,10 @@ TEST(Test1, updateName)
     }
     else
     {
-        //should fail here... b/c we failed to solve it.
+        //should fail here... b/c solve() failed to solve it.
         EXPECT_TRUE(result);
         cout << "Failed to solve: " << mazeFile << endl;
     }
     cout << myMaze << endl;
+
 }
