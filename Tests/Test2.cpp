@@ -21,7 +21,6 @@ using namespace std;
 TEST(Test2, maze1)
 {
 	Maze myMaze;
-    //string mazeFile = "maze0.txt";
     string mazeFile = "data/maze1.txt";
     bool result = false;
     result = myMaze.load(mazeFile);

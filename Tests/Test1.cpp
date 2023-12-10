@@ -16,7 +16,6 @@ using namespace std;
 TEST(Test1, maze0)
 {
 	Maze myMaze;
-    //string mazeFile = "maze0.txt";
     string mazeFile = "data/maze0.txt";
     bool result = false;
     result = myMaze.load(mazeFile);

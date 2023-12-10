@@ -16,7 +16,6 @@ using namespace std;
 TEST(Test3, maze2)
 {
 	Maze myMaze;
-    //string mazeFile = "maze0.txt";
     string mazeFile = "data/maze2.txt";
     bool result = false;
     result = myMaze.load(mazeFile);
@@ -49,6 +48,5 @@ TEST(Test3, maze2)
     cout << "Note the expected backtracking with the usage of NESW path-finding order"
     expectedPath = "NEEEEEENNNNN";
     EXPECT_EQ(myMaze.getPath(), expectedPath);
-
 }
 
