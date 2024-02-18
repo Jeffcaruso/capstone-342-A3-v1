@@ -95,4 +95,3 @@ jobs:
     - name: Run the project
       run: ./a.out
 
-
