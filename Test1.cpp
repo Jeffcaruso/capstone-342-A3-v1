@@ -1,27 +1,22 @@
 //============================================================================
-// Name        : Test2
+// Name        : Test1
 // Test Desc.  : <desc>
 // Author      : Jeffrey Caruso
 // Date    	   : Fall 2023
 //============================================================================
 
 #include <gtest/gtest.h>
-#include "applib/maze.h"
+#include "maze.h"
 
 #include <iostream>
 #include <sstream>
 
 using namespace std;
 
-//note / reminder:
-// use EXPECT_EQ (or _NE) for std::string
-// for c strings, use EXPECT_STREQ (or STRNE)
-// http://google.github.io/googletest/reference/assertions.html
-
-TEST(Test2, maze1)
+TEST(Test1, maze0)
 {
 	Maze myMaze;
-    string mazeFile = "data/maze1.txt";
+    string mazeFile = "data/maze0.txt";
     bool result = false;
     result = myMaze.load(mazeFile);
     if (! result)
@@ -50,8 +45,6 @@ TEST(Test2, maze1)
     cout << myMaze << endl;
     string expectedPath;
     //solving order of: N E S W... (with backtracking)
-    expectedPath = "NNWWWWWNNNEEEEEESEESSSEEENNNNN";
+    expectedPath = "NNNNNESSSSENNNNESSSSENNNNESSSSENNNNN";
     EXPECT_EQ(myMaze.getPath(), expectedPath);
-
 }
-

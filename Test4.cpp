@@ -6,7 +6,7 @@
 //============================================================================
 
 #include <gtest/gtest.h>
-#include "applib/maze.h"
+#include "maze.h"
 
 #include <iostream>
 #include <sstream>
@@ -45,7 +45,7 @@ TEST(Test4, updateName)
     cout << myMaze << endl;
     string expectedPath;
     //solving order of: N E S W... (with backtracking)
-    cout << "Note the expected backtracking with the usage of NESW path-finding order"
+    cout << "Note the expected backtracking with the usage of NESW path-finding order" << endl;
     expectedPath = "NEEEEEENNNNN";
     EXPECT_EQ(myMaze.getPath(), expectedPath);
 

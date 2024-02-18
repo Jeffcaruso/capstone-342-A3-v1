@@ -6,7 +6,7 @@
 //============================================================================
 
 #include <gtest/gtest.h>
-#include "applib/maze.h"
+#include "maze.h"
 
 #include <iostream>
 #include <sstream>

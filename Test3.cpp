@@ -1,22 +1,22 @@
 //============================================================================
-// Name        : Test1
+// Name        : Test3
 // Test Desc.  : <desc>
 // Author      : Jeffrey Caruso
 // Date    	   : Fall 2023
 //============================================================================
 
 #include <gtest/gtest.h>
-#include "applib/maze.h"
+#include "maze.h"
 
 #include <iostream>
 #include <sstream>
 
 using namespace std;
 
-TEST(Test1, maze0)
+TEST(Test3, maze2)
 {
 	Maze myMaze;
-    string mazeFile = "data/maze0.txt";
+    string mazeFile = "data/maze2.txt";
     bool result = false;
     result = myMaze.load(mazeFile);
     if (! result)
@@ -45,6 +45,8 @@ TEST(Test1, maze0)
     cout << myMaze << endl;
     string expectedPath;
     //solving order of: N E S W... (with backtracking)
-    expectedPath = "NNNNNESSSSENNNNESSSSENNNNESSSSENNNNN";
+    cout << "Note the expected backtracking with the usage of NESW path-finding order" << endl;
+    expectedPath = "NEEEEEENNNNN";
     EXPECT_EQ(myMaze.getPath(), expectedPath);
 }
+
